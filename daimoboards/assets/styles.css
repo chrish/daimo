@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Elephant'; /*a name to be used later*/
+    src: url('ELEPHNT.TTF'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Elephant Bold'; /*a name to be used later*/
+    src: url('Elephant_Bold.ttf'); /*URL to font*/
+}
+
+#board{
+	position: absolute;
+	width: 1000px;
+	left: 10vw;
+	top: 5vh;
+}
+
+#bg{
+	opacity: 0.8;
+	width: 100vw;
+	position: absolute;
+	height: 1800px;
+	background-image: url('bg.jpg');
+	background-repeat: repeat-y;
+	background-size: 100vw;
+	
+}
+
+.logofont {
+	font-family: 'Elephant';
+	font-weight: bold;
+	-webkit-text-stroke: .005em #fff;
+	background-color: #cc0000;
+	color: #211e7e;
+	font-weight: bold;
+	font-size: 8em;
+}
+
+div.header span {
+	height:125px !important;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1000px;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.mb5{
+	margin-bottom: 50px;
+}
+
+.row > span.column, .row > span.logofont{
+    zoom: 1; /* Trigger hasLayout */
+    width: 15%;
+	text-align: center;
+	flex-basis: 15%;
+  }
+
+  .row > span.tiny{
+    zoom: 1; /* Trigger hasLayout */
+    width: 8%;
+	text-align: center;
+	flex-basis: 8%;
+  }
+
+  .column, .tiny {
+	border: 1px solid #000;
+	background-color: #fff;
+	height: 200px;
+  }
+
+  .column{
+	  background-size: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  
+  }
+
+  .tiny{
+	  opacity: 0.8;
+	  font-size: 72px;
+	  vertical-align: middle;
+	  line-height: 200px;
+	  background-color: #aaa;
+  }
+
+  .noshow {
+	  opacity: 0;
+  }
+
+  .column h6{
+	
+	margin-top: 110%;
+	background-color: #fff;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background-color: #cc0000; 
+	color: #fff;
+	font-weight: bold;
+	padding: 3px;
+	  /*
+	  position: absolute;
+	  bottom: 10px;
+	  text-align: center;
+	  margin-left: auto;
+	  margin-right: auto;
+	  bottom: 5px;
+	  width: 100%;
+	  background-color: #fff;
+	  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	  background-color: #cc0000; 
+	  */
+  }

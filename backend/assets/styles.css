@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Elephant'; /*a name to be used later*/
+    src: url('ELEPHNT.TTF'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Elephant Bold'; /*a name to be used later*/
+    src: url('Elephant_Bold.ttf'); /*URL to font*/
+}
+
+
+#board{
+	position: absolute;
+	width: 80vw;
+	margin-left: -40vw;
+	left: 50vw;
+	
+}
+
+h1{
+	text-align: center;
+}
+
+#header{
+	margin-top: 20px;
+	border-radius: 15px;
+	background-color: #cc0000;
+	overflow:hidden;
+	padding: 10px;
+}
+
+#bg{
+	opacity: 0.8;
+	width: 100vw;
+	position: absolute;
+	height: 100vh;
+	background-image: url('bg.jpg');
+	background-repeat: repeat-y;
+	background-size: 100vw;
+	
+}
+
+.logofont {
+	font-family: 'Elephant';
+	font-weight: bold;
+	-webkit-text-stroke: .005em #fff;
+	background-color: #cc0000;
+	color: #211e7e;
+	font-weight: bold;
+	font-size: 8em;
+}
+
+.logofontsmall {
+	font-family: 'Elephant';
+	font-weight: bold;
+	text-align: center;
+	background-color: #cc0000;
+	color: #211e7e;
+	
+	font-size: 2em;
+	text-shadow:
+    -1px -1px 0 #fff,
+     0   -1px 0 #fff,
+     1px -1px 0 #fff,
+     1px  0   0 #fff,
+     1px  1px 0 #fff,
+     0    1px 0 #fff,
+    -1px  1px 0 #fff,
+    -1px  0   0 #fff;
+}
+
+#question{
+	width: 75%;
+	border-radius: 15px;
+	background-color: #fff;
+	font-size: 70px;
+	display: table;
+}
+
+#controls{
+	width:24%;
+}
+
+#controls > div{
+	border-radius: 15px;
+	background-color: #fff;
+	font-size: 70px;
+	height: 95px;
+	padding: 12px;
+	line-height: 100px;
+	text-align: center;
+}
+
+div#btns{
+	background-color: #fff;
+	cursor:pointer;
+	margin-top: 14px;
+}
+
+div#btns:hover{
+	background-color: #cc0000;
+}
+
+#actualquestion
+{
+	display: table-cell; 
+	vertical-align: middle;	
+	padding: 20px;
+	height: 200px;
+	text-align: center;
+}
+
+#qcontainer{
+	margin-top: 3vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+#qcontainer > div {
+    zoom: 1; /* Trigger hasLayout */
+    
+  }
